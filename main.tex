@@ -29,14 +29,24 @@
 \undef{\lemma}
 \newtheorem{lemma}{\translate{Lemma}}
 
-\title{\textcolor{WPI_red} {Analysis of 5G Directional HetNets \\with Stochastic Geometry}}
+\title{\textcolor{WPI_red} {Analysis of 5G Directional HetNets \\with Stochastic Geometry}\\Preliminaries}
 % \subtitle{\color{black} Lecture 30}
 \author{Travis Collins\\ Srikanth Pagadarai \\ Alexander Wyglinski}
-\date{December 17, 2015}
+\date{January 19, 2016}
 
 \begin{document}
 
 \frame{\maketitle}
+
+\begin{frame}
+    \frametitle{\color{WPI_red} Preliminary Desired Outcomes}
+    \begin{itemize}
+        \item Goal of this work is explore effects of directional antennas in multi-tier heterogeneous networks (HetNets).
+        \item HetNets heterogeneity includes diverse MAC schemes as well
+        \item Utilize current stochastic geometry frameworks for analytical analysis
+        \item Provide incites to optimize mult-tier network design
+    \end{itemize}
+\end{frame}
 
 
 \begin{frame}
@@ -44,13 +54,13 @@
 \begin{itemize}
 
 \item Desired signal is $S = r^{-\alpha}$.
-\item Interference is modeled as \textit{shot noise}: 
+\item Interference is modeled as \textit{shot noise}:
 \begin{equation*}
 I = \sum_{x\in \Phi} h_x\;l(||x||)\; \zeta_{m, x}^2(\psi)
 \end{equation*}
-where, $h_x$ is an exponential random variable, $\Phi$ is a Poisson Point Process (PPP) and $\zeta_{m, x}(\psi)$ is the radiation pattern of the directional antenna - modeled as a Gaussian function~\cite{werner2015}. 
+where, $h_x$ is an exponential random variable, $\Phi$ is a Poisson Point Process (PPP) and $\zeta_{m, x}(\psi)$ is the radiation pattern of the directional antenna - modeled as a Gaussian function~\cite{werner2015}.
 
-\item (Performance Metric) Probability of success: 
+\item (Performance Metric) Probability of success:
 \begin{equation*}
 p_s = P\left( \frac{S}{I} > \theta \right).
 \end{equation*}
@@ -138,11 +148,11 @@ p_s = exp\left(-0.25p\lambda\sqrt{\pi}  \left(\eta+\frac{\rho^2r^2\theta^\delta}
 \frametitle{\color{WPI_red} Future Work}
 \begin{itemize}
 
-\item A more detailed analytical evaluation of the relationship between antenna beamwidth and antenna mainbeam misalignment on the performance. 
+\item A more detailed analytical evaluation of the relationship between antenna beamwidth and antenna mainbeam misalignment on the performance.
 
-\item Extend the probability of success performance metric by evaluating transmission capacity for directional networks using CSMA MAC scheme. 
+\item Extend the probability of success performance metric by evaluating transmission capacity for directional networks using CSMA MAC scheme.
 
-\item The specific framework that will be used is the asymptotic SIR analysis work based on a PPP, in order to provide analytically tractable results for directional networks using CSMA. 
+\item The specific framework that will be used is the asymptotic SIR analysis work based on a PPP, in order to provide analytically tractable results for directional networks using CSMA.
 \end{itemize}
 
 \end{frame}
